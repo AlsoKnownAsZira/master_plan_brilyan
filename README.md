@@ -40,3 +40,11 @@
 <p>Menampilkan daftar tugas atau sebuah to-do list yang sama seperti praktikum sebelumnya, namun terdapat tambahan berupa method count untuk mengetahui banyaknya task yang telah diselesaikan atau dicentang.</p>
 
 ## Praktikum 3
+2. <p>Pada class PlanCreatorScreen menunjukkan struktur widget ketika pengguna berada di PlanCreatorScreen. Struktur ini dimulai dengan MaterialApp, diikuti dengan PlanProvider, dan kemudian PlanCreatorScreen. Di dalam PlanCreatorScreen, ada Column yang berisi TextField dan Expanded, yang memiliki ListView. Struktur ini berfungsi untuk membuat dan menampilkan daftar plan yang dibuat oleh pengguna. Lalu pada class PlanScreen ketika pengguna memilih plan, Navigator.push memindahkan pengguna ke halaman baru. Di dalam PlanScreen, struktur Scaffold digunakan untuk membangun UI screen dengan bagian utama ListView untuk menampilkan task di dalam plan dan SafeArea untuk teks. Transisi ini menunjukkan bagaimana state plan dapat dipindahkan di antara screen menggunakan Navigator.push dan bagaimana struktur widget disusun di screen yang berbeda.</p>
+3. <p>Aplikasi menampilkan daftar plan atau rencana yang ketika daftar plan tersebut diklik maka akan diarahkan halaman daftar tugas atau task seperti praktikum sebelumnya. Ketika pengguna mengetuk salah satu rencana di PlanCreatorScreen, aplikasi akan menavigasi ke PlanScreen, menampilkan daftar tugas yang terkait dengan rencana tersebut.
+
+Alur kerja aplikasi:
+
+Tambah plan: Di PlanCreatorScreen, pengguna memasukkan nama rencana baru di TextField. Setelah menekan tombol "Enter", rencana baru ditambahkan ke dalam daftar menggunakan ValueNotifier<List>.
+Tampil plan dan task: Di layar PlanScreen, pengguna melihat daftar tugas terkait dengan rencana yang dipilih. Setiap tugas dapat diperbarui statusnya selesai atau belum selesai menggunakan Checkbox.</p>
+![Praktikum 3](praktikum3.gif)
